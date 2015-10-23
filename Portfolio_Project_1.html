@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Import Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,300,100' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet'>
+    <!-- Link to Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Link to js -->
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Link to custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- set the viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cameron Berrett Portfolio</title>
+</head>
+
+<body>
+    <!-- This first row sets up the header with the udacity logo, my picture, name and title -->
+    <div class="container-fluid">
+        <header class="row headbar">
+            <div class="col-xs-4">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Udacity_Logo.svg/2000px-Udacity_Logo.svg.png" alt="Udacity Logo" class="center-horz img-fit-height">
+            </div>
+            <div class="col-xs-4">
+                <!-- The center-horz was used to place the image in the horizontal center of the header -->
+                <img src="images/me.jpg" class="img-fit-height pull-right center-horz rounded" alt="Picture of Cameron Berrett">
+            </div>
+            <div class="col-xs-4 pull-right">
+                <h1 class="right-text">Cameron Berrett</h1>
+                <h4 class="right-text">Front-End Trainee</h4>
+            </div>
+        </header>
+        <!-- This row is give a brief bio -->
+        <div class="row bio">
+            <div class="col-xs-12">
+                <p>I am a front-end developer in training in the SF Bay Areaworking on completing a nanodegree with Udacity. </p>
+            </div>
+        </div>
+        <!-- id fw sets the height of the row -->
+        <div class="row space">
+            <div id="fw" class="col-sm-3">
+                <h2>Featured Work</h2>
+            </div>
+        </div>
+        <!-- The next several rows have images as place holders for when I actually have projects to replace them with -->
+        <div class="row space">
+            <div class="col-sm-4">
+                <img src="images/monkey-1.jpg" alt="1st project will go here" class="img-size img-responsive center-block" data-toggle="modal" data-target="#project1">
+                <h3 class="text-center">Project 1</h3>
+            </div>
+            <div class="col-sm-4">
+                <img src="images/monkey-2.jpg" alt="2nd project will go here" class="img-size img-responsive center-block" data-toggle="modal" data-target="#project2">
+                <h3 class="text-center">Project 2</h3>
+            </div>
+            <div class="col-sm-4">
+                <img src="images/monkey-3.jpg" alt="3rd project will go here" class="img-size img-responsive center-block" data-toggle="modal" data-target="#project3">
+                <h3 class="text-center">Project 3</h3>
+            </div>
+        </div>
+        <div class="row space">
+            <div class="col-sm-4">
+                <img src="images/monkey-4.jpg" alt="3rd project will go here" class="img-size img-responsive center-block" data-toggle="modal" data-target="#project4">
+                <h3 class=" text-center">Project 4</h3>
+            </div>
+            <div class="col-sm-4">
+                <img src="images/monkey-5.jpg" alt="1st project will go here" class="img-size img-responsive center-block" data-toggle="modal" data-target="#project5">
+                <h3 class="text-center">Project 5</h3>
+            </div>
+            <div class="col-sm-4">
+                <img src="images/monkey-6.jpg" alt="1st project will go here" class="img-size img-responsive center-block" data-toggle="modal" data-target="#project6">
+                <h3 class="text-center">Project 6</h3>
+            </div>
+        </div>
+        <!-- The footer sets up the bottom of the page with a link to my linked in profile -->
+        <footer class="row headbar flex">
+            <a href="https://www.linkedin.com/in/cameronberrett">
+                <img src="https://lh3.ggpht.com/XgjH1SF8ce-fC597Y0gJqnLt-PpZ1zlE4xUcB8GH6_B5i00SR7jix5Re-T1kkL52VA=w300" class="img responsive rounded" id="linkedin" alt="LinkedIn Logo">
+            </a>
+            <div class="center-horz">
+                <h3>View My Profile on LinkedIn</h3>
+            </div>
+        </footer>
+    </div>
+    <!-- Modals, these code snippets were copied from udacity class examples-->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel1">Featured Project Number 1</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="images/monkey-1.jpg" alt="Project 1 photo"> This picture and text will be replaced as I complete projects that I can use to put in their place.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel2">Featured Project Number 2</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="images/monkey-2.jpg" alt="Project 2 Photo"> This picture and text will be replaced as I complete projects that I can use to put in their place.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel3">Featured Project Number 3</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="images/monkey-3.jpg" alt="Project 3 Photo"> This picture and text will be replaced as I complete projects that I can use to put in their place.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel4">Featured Project Number 4</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="images/monkey-4.jpg" alt="Project 4 photo"> This picture and text will be replaced as I complete projects that I can use to put in their place.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel5">Featured Project Number 5</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="images/monkey-5.jpg" alt="Project 5 photo"> This picture and text will be replaced as I complete projects that I can use to put in their place.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel6" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel6">Featured Project Number 6</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="images/monkey-6.jpg" alt="Project 6 photo"> This picture and text will be replaced as I complete projects that I can use to put in their place.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
